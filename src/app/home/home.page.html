@@ -1,0 +1,64 @@
+<!-- <ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="secondary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="contact"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button color="secondary">
+        <ion-icon slot="icon-only" name="more"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Default Buttons</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-header translucent>
+    <div style="position: absolute;top:0; width: 100vw">
+        <ion-searchbar></ion-searchbar>
+        </div>
+</ion-header>
+<ion-content>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      <ion-img src='/assets/images/Blasket Islands, Ireland 1920x1080.jpg'></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img src='/assets/images/Blyde River Canyon 1920x1080.jpg'></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img src='/assets/images/Nan Province, Thailand 1920x1080.jpg'></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img src='/assets/images/Numa Falls, Canada 1920x1080.jpg'></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img src='/assets/images/Sisteron, France 1920x1080.jpg'></ion-img>
+    </ion-slide>
+  </ion-slides>
+
+  <div class="ion-padding">
+    The world is your oyster.
+    {{ slideOpts }}
+    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be
+      your guide.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi voluptatibus reiciendis explicabo nam id
+      ducimus inventore dolores consectetur voluptatum soluta, ipsum eius doloribus nesciunt. Sed praesentium iste earum
+      saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi voluptatibus reiciendis explicabo nam id
+      ducimus inventore dolores consectetur voluptatum soluta, ipsum eius doloribus nesciunt. Sed praesentium iste earum
+      saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi voluptatibus reiciendis explicabo nam id
+      ducimus inventore dolores consectetur voluptatum soluta, ipsum eius doloribus nesciunt. Sed praesentium iste earum
+      saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi voluptatibus reiciendis explicabo nam id
+      ducimus inventore dolores consectetur voluptatum soluta, ipsum eius doloribus nesciunt. Sed praesentium iste earum
+      saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi voluptatibus reiciendis explicabo nam id
+      ducimus inventore dolores consectetur voluptatum soluta, ipsum eius doloribus nesciunt. Sed praesentium iste earum
+      saepe?</p>
+  </div>
+</ion-content>

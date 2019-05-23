@@ -1,0 +1,12 @@
+<div class="inner-content">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-img [src]="selectedPlace.imageUrl"></ion-img>
+        <h2>{{selectedPlace.price | currency}} / Night</h2>
+        <p>{{selectedPlace.description}}</p>
+        <ion-button expand='block' (click)="onDismiss()">Close</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
