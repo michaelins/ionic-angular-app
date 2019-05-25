@@ -1,0 +1,16 @@
+ion-toolbar {
+  --border-width: 0;
+  --background: transparent;
+}
+div.searchbar-wrapper {
+//   background: rgba(var(--ion-color-dark-rgb), 0.7);
+  //   background: var(--ion-color-primary);
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+ion-searchbar {
+  --background: #ffffff;
+}

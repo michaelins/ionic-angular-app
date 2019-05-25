@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PlacesService } from './places.service';
+import { Place } from './place.model';
 
 @Component({
   selector: 'app-places',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlacesPage implements OnInit {
 
-  constructor() { }
+  places: Place[];
+  hideTabBar: boolean;
+
+  constructor(private placesService: PlacesService) { }
 
   ngOnInit() {
+    this.places = this.placesService.places;
+    this.hideTabBar = this.placesService.hideTabBar;
   }
 
 }
