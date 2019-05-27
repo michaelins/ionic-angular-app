@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PlacesService } from '../places.service';
+import { ModalController } from '@ionic/angular';
+import { LoginComponent } from '../../shared/login/login.component';
 
 @Component({
   selector: 'app-offers',
@@ -9,10 +11,19 @@ import { PlacesService } from '../places.service';
 export class OffersPage implements OnInit {
 
   constructor(
-    private placesService: PlacesService
+    private placesService: PlacesService,
+    private modalCtrl: ModalController
   ) { }
 
   ngOnInit() {
+  }
+
+  onClick() {
+    this.modalCtrl.create({
+      component: LoginComponent
+    }).then(modal => {
+      modal.present();
+    });
   }
 
   ionViewWillEnter() {
